@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rose Café</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Rose Café</h1>
+      <p>A warm and sweet place for handcrafted desserts</p>
+      <a href="#products" class="btn">View Menu</a>
+    </div>
+  </header>
+
+  <!-- ===== NAV ===== -->
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#products">Menu</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="card">
+    <h2>About Us</h2>
+    <p>
+      Rose Café is a boutique pastry café dedicated to crafting high-quality
+      desserts using premium ingredients. We believe that every dessert should
+      deliver not only exceptional taste but also a sense of calm and comfort.
+      Our carefully selected raw materials, combined with traditional baking
+      techniques, create a warm and relaxing experience for our guests.
+    </p>
+
+    <!-- PLACE ABOUT IMAGE HERE -->
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section id="products" class="card">
+    <h2>Our Menu</h2>
+
+    <button class="menu-btn" onclick="toggleMenu('coffee')">☕ Coffee</button>
+    <div class="menu-content" id="coffee">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
+        <p>Espresso</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+        <p>Cappuccino</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1521302080334-4bebac2763a6">
+        <p>Latte</p>
+      </div>
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu('icecream')">🍦 Ice Cream</button>
+    <div class="menu-content" id="icecream">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f">
+        <p>Vanilla</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1505253216365-1f94c6a3a7d4">
+        <p>Chocolate</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1542444459-db47d03c4b9c">
+        <p>Strawberry</p>
+      </div>
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu('cake')">🍰 Cake</button>
+    <div class="menu-content" id="cake">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587">
+        <p>Chocolate Cake</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b">
+        <p>Cheesecake</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1601979031925-424e53b6caaa">
+        <p>Strawberry Cake</p>
+      </div>
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu('shake')">🥤 Shake</button>
+    <div class="menu-content" id="shake">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1577801599717-4a1d3b7aafc4">
+        <p>Chocolate Shake</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1589712235274-8af3b2e1f71b">
+        <p>Banana Shake</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1599785209707-28a9f4b9f8a4">
+        <p>Strawberry Shake</p>
+      </div>
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu('cold')">🍹 Cold Drinks</button>
+    <div class="menu-content" id="cold">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e">
+        <p>Lemonade</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443">
+        <p>Iced Tea</p>
+      </div>
+    </div>
+
+    <button class="menu-btn" onclick="toggleMenu('cookies')">🍪 Cookies</button>
+    <div class="menu-content" id="cookies">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1607082349566-187342175e2f">
+        <p>Chocolate Chip</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1599785209793-7c4c60d4f0ab">
+        <p>Butter Cookies</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEAM ===== -->
+  <section id="team" class="card">
+    <h2>Our Team</h2>
+    <p>
+      Our team consists of students from the 1404 entry cohort of
+      Iran University of Science and Technology. Through collaboration,
+      creativity, and dedication, we strive to deliver quality and professionalism.
+    </p>
+    <!-- PLACE TEAM IMAGE HERE -->
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="card">
+    <h2>Contact Us</h2>
+    <p>Email: contact@rosecafe.com</p>
+    <button onclick="showThanks()">Send Message</button>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>
+      Special thanks to Mr. Etemadi and Mr. Haji Hosseini for their guidance and support.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
